@@ -22,6 +22,7 @@ while($rows_pd = mysqli_fetch_array($result_pd)){
         <td> <b> Data de encaminhamento: </b>".$rows_pd['data_encaminhado']."<br></td>
         <td> <b> Status: </b>".$rows_pd['status']."<br></td>
         <td> <b> Total de dias: </b>".$rows_pd['total_dias']."<br></td>
+        <br><br>
     </tr>";
 }
 
