@@ -15,7 +15,7 @@
             <br>
             <input name="outros" placeholder="Outros" type="text" required>
             <br>
-			<button type="submit" style="width: 100px;"> Login </button>
+			<button type="submit" style="width: 100px;"> Cadastre </button>
 			</form>
     </body>
 </html>

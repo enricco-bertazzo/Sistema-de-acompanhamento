@@ -25,7 +25,7 @@
             <br>
             <input name="total_dias" placeholder="Total de dias" type="text" required>
             <br>
-			<button type="submit" style="width: 100px;"> Login </button>
+			<button type="submit" style="width: 100px;"> Cadastre </button>
 			</form>
     </body>
 </html>

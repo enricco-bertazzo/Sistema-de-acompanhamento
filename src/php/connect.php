@@ -27,6 +27,6 @@ $extra = "CREATE TABLE IF NOT EXISTS `acompanhamento`.`extra` (
     `outros` VARCHAR(45) NOT NULL)";
 
 $result = mysqli_query($connect, $pd);
-$result = mysqli_query($connect, $extra);
+$result_extra = mysqli_query($connect, $extra);
 
 ?>
