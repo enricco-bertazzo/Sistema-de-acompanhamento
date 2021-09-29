@@ -7,26 +7,25 @@ define('DB', 'acompanhamento');
 
 $connect = mysqli_connect(HOST, EMAIL, SENHA, DB) or die ('Não foi possivel acessar');
 
-$pd = "CREATE TABLE IF NOT EXISTS `acompanhamento`.`pd` (
-    `pd` VARCHAR(45) NOT NULL,
-    `data_chegada` VARCHAR(45) NOT NULL,
-    `origem` VARCHAR(45) NOT NULL,
-    `tipo_processo` VARCHAR(45) NOT NULL,
-    `descricao` VARCHAR(45) NOT NULL,
-    `analista_setor` VARCHAR(45) NOT NULL,
-    `encaminhado` VARCHAR(45) NOT NULL,
-    `data_encaminhado` VARCHAR(45) NOT NULL,
-    `status` VARCHAR(45) NOT NULL,
-    `total_dias` VARCHAR(45) NOT NULL)";
+$dados = "CREATE TABLE IF NOT EXISTS `acompanhamneto`.`dados` (
+    `cadastro` INT NOT NULL,
+    `comunidade` VARCHAR(45) NOT NULL,
+    `rua` VARCHAR(45) NOT NULL,
+    `numero` VARCHAR(45) NOT NULL,
+    `quadra` VARCHAR(45) NOT NULL,
+    `lote` VARCHAR(45) NOT NULL,
+    `beneficiario` VARCHAR(45) NOT NULL,
+    `rg` VARCHAR(45) NOT NULL,
+    `cpf` VARCHAR(45) NOT NULL,
+    `estado_civil` VARCHAR(45) NOT NULL,
+    `filiacao_1` VARCHAR(45) NOT NULL,
+    `filiacao_2` VARCHAR(45) NOT NULL,
+    `profissao` VARCHAR(45) NOT NULL,
+    `renda` VARCHAR(45) NOT NULL,
+    `nome_conjuge` VARCHAR(45) NOT NULL,
+    PRIMARY KEY (`cadastro`),
+    UNIQUE INDEX `cadastro_UNIQUE` (`cadastro` ASC) VISIBLE)";
 
-$extra = "CREATE TABLE IF NOT EXISTS `acompanhamento`.`extra` (
-    `atend_presencial` VARCHAR(45) NOT NULL,
-    `atend_telefone` VARCHAR(45) NOT NULL,
-    `levan_campo` VARCHAR(45) NOT NULL,
-    `reunioes` VARCHAR(45) NOT NULL,
-    `outros` VARCHAR(45) NOT NULL)";
-
-$result = mysqli_query($connect, $pd);
-$result_extra = mysqli_query($connect, $extra);
+$result = mysqli_query($connect, $dados);
 
 ?>
