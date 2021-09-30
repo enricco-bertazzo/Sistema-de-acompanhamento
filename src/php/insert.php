@@ -21,13 +21,7 @@ $nome_conjuge = $_POST['nome_conjuge'];
 $sql = "INSERT INTO dados (comunidade, data_cadastro, rua, tipo_numero, quadra, lote_setor, beneficiario, rg, cpf, estado_civil, filiacao_1, filiacao_2, profissao, renda, nome_conjuge) 
 VALUES ('$comunidade', '$cadastro', '$rua', '$numero', '$quadra', '$lote', '$beneficiario', '$rg', '$cpf', '$estado_civil', '$filiacao_1', '$filiacao_2', '$profissao', '$renda', '$nome_conjuge')";
 
-if ($connect -> query($sql) === TRUE) {
-    echo "sucesso";
-  } else {
-    echo "Error: " . $sql . "<br>" . $connect -> error;
-  }
-
 $connect -> close();
 
-header('location: ../pages/index.php');
+
 ?>

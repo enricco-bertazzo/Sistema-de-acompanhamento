@@ -7,8 +7,8 @@ define('DB', 'acompanhamento');
 
 $connect = mysqli_connect(HOST, EMAIL, SENHA, DB) or die ('Não foi possivel acessar');
 
-$dados = "CREATE TABLE IF NOT EXISTS `acompanhamneto`.`dados` (
-    `cadastro` INT NOT NULL,
+$dados = "CREATE TABLE IF NOT EXISTS `acompanhamento`.`dados` (
+    `cadastro` VARCHAR(45) NOT NULL,
     `comunidade` VARCHAR(45) NOT NULL,
     `rua` VARCHAR(45) NOT NULL,
     `numero` VARCHAR(45) NOT NULL,
@@ -22,9 +22,7 @@ $dados = "CREATE TABLE IF NOT EXISTS `acompanhamneto`.`dados` (
     `filiacao_2` VARCHAR(45) NOT NULL,
     `profissao` VARCHAR(45) NOT NULL,
     `renda` VARCHAR(45) NOT NULL,
-    `nome_conjuge` VARCHAR(45) NOT NULL,
-    PRIMARY KEY (`cadastro`),
-    UNIQUE INDEX `cadastro_UNIQUE` (`cadastro` ASC) VISIBLE)";
+    `nome_conjuge` VARCHAR(45) NOT NULL)";
 
 $result = mysqli_query($connect, $dados);
 
