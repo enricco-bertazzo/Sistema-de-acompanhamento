@@ -8,8 +8,8 @@ define('DB', 'acompanhamento');
 $connect = mysqli_connect(HOST, EMAIL, SENHA, DB) or die ('Não foi possivel acessar');
 
 $dados = "CREATE TABLE IF NOT EXISTS `acompanhamento`.`dados` (
-    `cadastro` VARCHAR(45) NOT NULL,
     `comunidade` VARCHAR(45) NOT NULL,
+    `cadastro` VARCHAR(45) NOT NULL,
     `rua` VARCHAR(45) NOT NULL,
     `numero` VARCHAR(45) NOT NULL,
     `quadra` VARCHAR(45) NOT NULL,

@@ -7,7 +7,7 @@
     </head>
 
     <body class="body text-center">
-        <form class="cad" method="POST" action="../php/insert.php">
+        <form class="cad" action="../php/insert.php" method="POST">
 
             <div class="form-floating">
                 <input name="cadastro" placeholder="Nº do Cadastro" type="text" class="form-control" required>

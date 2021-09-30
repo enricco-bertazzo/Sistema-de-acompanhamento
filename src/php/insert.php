@@ -2,8 +2,8 @@
 
 include("connect.php");
 
-$comunidade = $_POST['comunidade'];
 $cadastro = $_POST['cadastro'];
+$comunidade = $_POST['comunidade'];
 $rua = $_POST['rua'];
 $numero = $_POST['numero'];
 $quadra = $_POST['quadra'];
@@ -18,10 +18,20 @@ $profissao = $_POST['profissao'];
 $renda = $_POST['renda'];
 $nome_conjuge = $_POST['nome_conjuge'];
 
-$sql = "INSERT INTO dados (comunidade, data_cadastro, rua, tipo_numero, quadra, lote_setor, beneficiario, rg, cpf, estado_civil, filiacao_1, filiacao_2, profissao, renda, nome_conjuge) 
-VALUES ('$comunidade', '$cadastro', '$rua', '$numero', '$quadra', '$lote', '$beneficiario', '$rg', '$cpf', '$estado_civil', '$filiacao_1', '$filiacao_2', '$profissao', '$renda', '$nome_conjuge')";
+if ($connect->connect_error) {
+    die("Connection failed: " . $connect->connect_error);
+  }
+  
+$sql = "INSERT INTO dados (cadastro, comunidade, rua, numero, quadra, lote, beneficiario, rg, cpf, estado_civil, filiacao_1, filiacao_2, profissao, renda, nome_conjuge) 
+VALUES ('$cadastro', '$comunidade', '$rua', '$numero', '$quadra', '$lote', '$beneficiario', '$rg', '$cpf', '$estado_civil', '$filiacao_1', '$filiacao_2', '$profissao', '$renda', '$nome_conjuge')";
+  
+if ($connect -> query($sql) === TRUE) {
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . $connect->error;
+}
 
 $connect -> close();
 
-
+header('location: ../pages/index.php');
 ?>
