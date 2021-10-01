@@ -33,5 +33,5 @@ if ($connect -> query($sql) === TRUE) {
 
 $connect -> close();
 
-header('location: ../pages/index.php');
+header('location: ../pages/cadastro.php');
 ?>

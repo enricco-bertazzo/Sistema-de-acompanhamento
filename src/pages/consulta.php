@@ -7,14 +7,33 @@
     </head>
 
     <body class="body text-center">
-        <form class="cad" action="../php/query.php" method="POST">
+        <form class="cad" action="../php/query_nome.php" method="POST">
 
             <div class="form-floating">
-                <input name="cpf_query" placeholder="Nº do CPF do Beneficiario" type="text" class="form-control" required>
-                <label> Nº do CPF do Beneficiario </label>
+                <input name="nome_query" placeholder="Nome completo do Beneficiario" type="text" class="form-control" required>
+                <label> Nome completo do Beneficiario </label>
             </div>
-            <button class="btn w-100 btn-primary" type="submit"> Pesquisar </button>
 
+            <button class="btn w-100 btn-primary" type="submit"> Pesquisar </button>
 		</form>
+        <form class="cad" action="../php/query_endereco.php" method="POST">
+
+            <div class="form-floating">
+                <input name="comunidade_query" placeholder="Comunidade" type="text" class="form-control" required>
+                <label> Comunidade </label>
+            </div>
+            <div class="form-floating">
+                <input name="rua_query" placeholder="Rua" type="text" class="form-control" required>
+                <label> Rua </label>
+            </div>
+            <div class="form-floating">
+                <input name="numero_query" placeholder="Número da casa" type="text" class="form-control" required>
+                <label> Número da casa </label>
+            </div>
+
+                <button class="btn w-100 btn-primary" type="submit"> Pesquisar </button>
+        </form>
+
+        <p class="mt-5 mb-3"> Deseja Cadastrar? <a href="cadastro.php"> Cadastre </a></p>
     </body>
 </html>
