@@ -1,3 +1,10 @@
+body{
+	background-color: #cccccc;
+}
+#menu{
+	z-index: 9999;
+}
+
 .cad {
     width: 100%;
     max-width: 400px;
