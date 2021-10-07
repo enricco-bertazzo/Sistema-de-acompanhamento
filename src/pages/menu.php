@@ -11,7 +11,7 @@
                         Cadastramento
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="cadastro.php">Cadastrar Usuario</a></li>
+                        <li><a class="dropdown-item" href="cadastro.php"> Cadastrar Dados </a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -19,8 +19,16 @@
                         Pesquisa
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="consulta_nome.php">Pesquisa via Nome</a></li>
-                        <li><a class="dropdown-item" href="consulta_endereco.php">Pesquisa via Endereço</a></li>
+                        <li><a class="dropdown-item" href="consulta_nome.php"> Pesquisa por Nome </a></li>
+                        <li><a class="dropdown-item" href="consulta_endereco.php"> Pesquisa por Endereço </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Edição
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="edicao.php"> Edição de Dados </a></li>
                     </ul>
                 </li>
             </ul>
