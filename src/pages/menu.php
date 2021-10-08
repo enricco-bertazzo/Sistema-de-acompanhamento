@@ -28,7 +28,7 @@
                         Edição
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="edit_query_nome.php"> Edição via Nome </a></li>
+                        <li><a class="dropdown-item" href="edit_query_nome.php"> Edição vi Nome </a></li>
                         <li><a class="dropdown-item" href="edit_query_endereco.php"> Edição via Endereço </a></li>
                     </ul>
                 </li>
