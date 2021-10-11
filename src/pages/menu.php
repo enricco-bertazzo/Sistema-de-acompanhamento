@@ -21,6 +21,7 @@
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="consulta_nome.php"> Pesquisa via Nome </a></li>
                         <li><a class="dropdown-item" href="consulta_endereco.php"> Pesquisa via Endereço </a></li>
+                        <li><a class="dropdown-item" href="consulta_cpf.php"> Pesquisa via CPF </a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -28,8 +29,9 @@
                         Edição
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="edit_query_nome.php"> Edição vi Nome </a></li>
-                        <li><a class="dropdown-item" href="edit_query_endereco.php"> Edição via Endereço </a></li>
+                        <li><a class="dropdown-item" href="edit_nome.php"> Edição via Nome </a></li>
+                        <li><a class="dropdown-item" href="edit_endereco.php"> Edição via Endereço </a></li>
+                        <li><a class="dropdown-item" href="edit_cpf.php"> Edição via CPF </a></li>
                     </ul>
                 </li>
             </ul>

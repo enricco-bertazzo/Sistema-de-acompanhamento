@@ -14,27 +14,21 @@
 	    <script src="../js/jquery-3.6.0.min.js"></script>
 	    <script src="../js/jquery.mask.min.js"></script>
     </head>
-    <body>
+
+    <body class="body text-center">
         <?php
 
         include "menu.php";
 
         ?>
-        <form action="result_consulta_endereco.php" method="POST">
+        <form action="result_consulta_cpf.php" method="POST">
             <div class="card" id="formulario">
                 <div class="form-floating">
-                <input name="comunidade_query" placeholder="Comunidade" type="text" class="form-control" required>
-                <label> Comunidade </label>
-                </div>
-                <div class="form-floating">
-                <input name="rua_query" placeholder="Rua" type="text" class="form-control" required>
-                <label> Rua </label>
-                </div>
-                <div class="form-floating">
-                <input name="numero_query" placeholder="Número da casa" type="text" class="form-control" required>
-                <label> Número da casa </label>
+                    <input name="cpf_query" placeholder="Nome completo do Beneficiario" type="text" class="form-control" required>
+                    <label> Informe o CPF </label>
                 </div>
                 <button class="btn w-100 btn-primary" type="submit"> Pesquisar </button>
             </div>
-        </form>
+		</form>
     </body>
+</html>

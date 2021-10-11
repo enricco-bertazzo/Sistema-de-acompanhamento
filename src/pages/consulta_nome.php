@@ -21,7 +21,7 @@
         include "menu.php";
 
         ?>
-        <form action="../php/query_nome.php" method="POST">
+        <form action="result_consulta_nome.php" method="POST">
             <div class="card" id="formulario">
                 <div class="form-floating">
                     <input name="nome_query" placeholder="Nome completo do Beneficiario" type="text" class="form-control" required>
