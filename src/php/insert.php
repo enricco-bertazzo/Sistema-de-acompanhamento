@@ -19,7 +19,7 @@ $profissao = $_POST['profissao'];
 $renda = $_POST['renda'];
 $nome_conjuge = $_POST['nome_conjuge'];
 
-$sql_verificacao = "SELECT count(*) AS total FROM dados WHERE cpf = '$cpf' OR rg = '$rg' OR beneficiario = '$beneficiario' OR nome_conjuge='$nome_conjuge'";
+$sql_verificacao = "SELECT count(*) AS total FROM dados WHERE cpf = '$cpf' OR rg = '$rg'";
 $result = mysqli_query($connect, $sql_verificacao);
 $row = mysqli_fetch_assoc($result);
 
