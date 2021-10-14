@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php session_start() ?>
 <html>
     <head>
         <title> Sistema de Acompanhamento </title>
@@ -83,6 +84,14 @@
                     <input name="nome_conjuge" placeholder="Nome do conjuge" type="text" class="form-control" required>
                     <label> Nome do conjuge </label>
                 </div>
+                <?php
+                if (isset($_SESSION['usuario_existe'])) {
+                    echo '<div class="alert alert-danger mt-3" role="alert">
+                        Usuário já cadastrado!
+                    </div>';
+                    unset($_SESSION['usuario_existe']);
+                }
+                ?>
 
                 <button class="btn w-100 btn-primary" type="submit"> Cadastrar </button>
             </div>

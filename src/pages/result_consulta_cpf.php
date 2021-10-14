@@ -22,7 +22,7 @@
         include "../php/query_cpf.php";
 
         ?>
-        <form action="#" method="POST">
+        <form>
             <div class="card" id="formulario">
                 <div class="form-floating">
                     <input name="cadastro" placeholder="Nº do Cadastro" type="text" class="form-control" readonly value="<?php echo $rows_dados['cadastro']  ?>" required>
