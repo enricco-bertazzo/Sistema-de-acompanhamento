@@ -17,6 +17,9 @@
 	include "menu.php";
 
 	?>
-</body>
+    <div class="cad" class="card" class="form-floating">
+		<img src="../img/logo.png">
+    </div>
+</bo
 
 </html>
