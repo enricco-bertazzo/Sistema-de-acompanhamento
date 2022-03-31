@@ -1,3 +1,3 @@
 <?php
-header('location: ../pages/menu.php')
+header('location: ..src/pages/menu.php')
 ?>
