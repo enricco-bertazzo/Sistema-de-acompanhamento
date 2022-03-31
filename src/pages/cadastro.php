@@ -26,7 +26,7 @@
             <div class="card" id="formulario">
                 <div class="form-floating">
                     <input name="cadastro" placeholder="Nº do Cadastro" type="text" class="form-control" required>
-                    <label> Nº do Cadastro </label>
+                    <label> Nº do Cadastrooo </label>
                 </div>
                 <div class="form-floating">
                     <input name="comunidade" placeholder="Comunidade" type="text" class="form-control" required>
